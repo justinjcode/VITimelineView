@@ -86,6 +86,10 @@ static const char VIOperationKey = '\0';
 
 #pragma mark - Override
 
+- (void)setWidthPerSecond:(CGFloat)widthPerSecond {
+    [self.dataSource resetWidtPerSecond:widthPerSecond];
+}
+
 - (void)reloadData {
     [self removeImageViewsOutOfRange:NSMakeRange(0, 0)];
     [self updateDataIfNeed];

@@ -10,6 +10,10 @@
 
 @implementation VIRangeContentView
 
+- (void)setWidthPerSecond:(CGFloat)widthPerSecond {
+    NSAssert(NO, @"Subclass implement");
+}
+
 - (void)reloadData {
     NSAssert(NO, @"Subclass implement");
 }

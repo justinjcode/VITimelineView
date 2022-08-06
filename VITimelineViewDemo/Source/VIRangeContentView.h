@@ -11,6 +11,8 @@
 
 @interface VIRangeContentView : UIView
 
+- (void)setWidthPerSecond:(CGFloat)widthPerSecond;
+
 - (void)reloadData;
 - (void)updateDataIfNeed;
 

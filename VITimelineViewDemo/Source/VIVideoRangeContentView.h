@@ -14,6 +14,8 @@
 
 @protocol VIVideoRangeContentViewDataSource <NSObject>
 
+- (void)resetWidtPerSecond:(CGFloat)widthPerSecond;
+
 - (NSInteger)videoRangeContentViewNumberOfImages:(VIVideoRangeContentView *)view;
 - (UIImage *)videoRangeContent:(VIVideoRangeContentView *)view imageAtIndex:(NSInteger)index preferredSize:(CGSize)size;
 

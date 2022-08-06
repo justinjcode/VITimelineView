@@ -57,6 +57,10 @@
 
 #pragma mark - VIVideoRangeContentViewDataSource
 
+- (void)resetWidtPerSecond:(CGFloat)widthPerSecond {
+    self.widthPerSecond = widthPerSecond;
+}
+
 - (NSInteger)videoRangeContentViewNumberOfImages:(VIVideoRangeContentView *)view {
     NSTimeInterval sourceSeconds = CMTimeGetSeconds(self.asset.duration);
     return ceil(sourceSeconds / (self.imageSize.width / self.widthPerSecond));

@@ -249,6 +249,7 @@
 - (void)setWidthPerSecond:(CGFloat)widthPerSecond {
     [self willChangeValueForKey:@"widthPerSecond"];
     _widthPerSecond = widthPerSecond;
+    [_contentView setWidthPerSecond:widthPerSecond];
     [self didChangeValueForKey:@"widthPerSecond"];
     [self invalidateIntrinsicContentSize];
 }
